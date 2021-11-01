@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="this is for practice" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Abdukarim">
+	<title>IjtimoiyUz</title>
+	<link rel="icon" href="imgs/logo.png" type="image/gif" sizes="16x16">
+	<!--bootstrap icons-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--fontawesome icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <!--css files-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<header class="header4" id="header4">
+	<div>			
+			</div>
+			<nav id="nav1">
+				<div class="navin_block1">
+					<div class="logo">
+						<img src="imgs/logo.png">
+					</div>
+					<div class="navs">
+						<ul>
+							<a href="main.html">
+								<li>
+									BOSH SAHIFA
+								</li>
+							</a>
+							<a href="places.html">
+								<li>
+									SIHATGOHLAR
+								</li>
+							</a>
+							<a href="about.html">
+								<li>
+									BIZ HAQIMIZDA
+								</li>
+							</a>
+							<a href="news.html">
+								<li>
+									YANGILIKLAR
+								</li>
+							</a>
+							<a href="contact.html">
+								<li>
+									ALOQA
+								</li>
+							</a>
+							<a href="#" onclick="showModal()">
+								<li>
+									<i class="bi bi-search">
+										
+									</i>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="user">
+						<a href="#" class="float-right">
+							<i class="bi bi-person"></i>
+						</a>
+					</div>
+				</div>	
+				<div class="search_nav1">
+					<div class="search_inp1">
+							<input type="search" class="form-control" list="searching" name="searching" id="search_inp1">
+							<datalist id="searching">
+						    	<option value="result1">
+						    	<option value="result2">
+						    	<option value="result3">
+						    	<option value="result4">
+						    	<option value="result5">
+							</datalist>
+					</div>
+					<div class="search_btn1">
+							<input class="btn-primary" type="submit" value="search"  id="search_btn1">
+							<span class="float-right " style="position: relative; top:2.5px; font-size:25px; cursor: pointer;" onclick="closeModal()">
+								<i class="bi bi-x-lg"></i>
+							</span>
+					</div>	
+				</div>
+	   		</nav>
+	   		<nav class="navbar navbar-inverse" id="nav2" >
+			    <div class="navbar-header " style="width:100%;">
+			      <a class="navbar-brand float-left" href="#">
+			      	<img src="imgs/logo.png" width="30" style="position:relative; top:-4px;">
+			      </a>
+			      <button type="button" class="navbar-toggle float-right" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="myNavbar" style="border: none;">
+			      <ul class="nav navbar-nav">
+			        <li class="hover_li"><a href="main.html">BOSH SAHIFA</a></li>
+			        <li class="hover_li"><a href="places.html">SIHATGOHLAR</a></li>
+			        <li class="hover_li"><a href="about.html">BIZ HAQIMIZDA</a></li>
+			        <li class="hover_li"><a href="news.html">YANGILIKLAR</a></li>
+			        <li class="hover_li"><a href="contact.html">ALOQA</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right" style="margin-top:-10px; color:white !important;">
+			        <li><a href="#"><span class="glyphicon glyphicon-user mr-3"></span>RO'YHATDAN O'TISH</a></li>
+			        <form action="#">
+			        	<li>
+			        		<div style="display: flex; align-items:center ; padding:0px 15px;">
+			        			<input type="search"list="searching_mobile" name="searching_mobile"class="form-control" id="search_inp2">
+			        			<datalist id="searching_mobile">
+						    		<option value="result1">
+						    		<option value="result2">
+						    		<option value="result3">
+						    		<option value="result4">
+						    		<option value="result5">
+									</datalist>
+			        			<input type="submit" class="btn-primary" id="search_btn2" value="search">
+			        		</div>
+			        	</li>
+			        </form>
+			      </ul>
+			    </div>
+			</nav>	
+	</div>
+</header>
+<main class="pl-3 pr-3 header4" id="header4">
+	<div class="text-center mt-5 mb-5">
+		<h2 style="font-family:Palatino Linotype; font-size:45px;">Tashkilot haqida</h2>
+	</div>
+	<div class="container pb-5" style="margin-top:50px;">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 place_bg mb-5 pl-3 pr-3">
+				<a href="">
+					<img src="imgs/border_big1.png" style="width:100%;">
+				</a>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3 mb-5">
+				<h2 class="mb-3" style="font-family:Palatino Linotype; line-height:45px;"><b>Andijon viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi</b></h2>
+				<p style="font-family:Tahoma; letter-spacing:0.5px; line-height:25px; font-size:16px;">Aholiga tibbiy ijtimoiy xizmatlarni tashkil qiladi. Jumladan Pensioner va nogironlarni sog'lomlashtirish, ularni reabilitatsiya texnik vositalari bilan ta'minlash ( nogironlar aravachasi, hassa, eshtish moslamasi, qo'ltiq tayoq va x/k) bundan tashqari protez ortopediya mahsulotlari bilan ta'minlaydi. Ro'yxatga olingan o'zgalar parvarishiga muhtoj yakka yolg'izlarga uyda tibbiy-ijtimoiy xizmatlarni tashkillashtiradi. Tizimda 4 ta sahovat va muruvvat uylari va viloyatda nogironligi bo'lgan shaxslarni reabilitatsiya qilish va protezlash markazi ham boshqarma tizimiga kiradi.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 pr-3 pl-3">
+				<div class="contact_us">
+					<div class="h2 mb-3"><i class="fas fa-map-marker-alt"></i></div>
+					<div class="h4"><p><b>Manzil</b></p></div>
+					<div class="mt-3"><p>Andijon shaxar Milliy Tiklanish k. 43</p></div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 pr-3 pl-3">
+				<div class="contact_us">
+					<div class="h2 mb-3"><i class="fa fa-phone"></i></div>
+					<div class="h4"><p><b>Telefon raqami</b></p></div>
+					<div class="mt-3"><p>+998977777777</p></div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 pr-3 pl-3">
+				<div class="contact_us">
+					<div class="h2 mb-3"><i class="fas fa-envelope"></i></div>
+					<div class="h4"><p><b>Electron pochta</b></p></div>
+					<div class="mt-3"><p>ijtimoiyhizmatlar@gmail.com</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center mb-5">
+			<h1 class="mb-3 our_membrs">Bizning Jamoa</h1>
+			<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 pl-3 pr-3 mb-5">
+				<div class="group_us">
+					<div class="membrs membrs1">
+						
+					</div>
+					<p class="membr_name mt-3"><b>Manuella Nevoresky</b></p>
+					<p class="membr_type mt-2">CEO - FOUNDER Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt, cumque rerum hic modi at corporis in sit possimus labore fugiat quos esse facilis officia veritatis reiciendis soluta commodi perferendis.	</p>
+					<div class="mt-5" style="display:flex;">
+						<a href="#" class="contact_social_media facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="contact_social_media twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="contact_social_media instagram">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="contact_social_media linkedin">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 pl-3 pr-3 mb-5">
+				<div class="group_us">
+					<div class="membrs membrs2">
+						
+					</div>
+					<p class="membr_name mt-3"><b>Samuel Hardy</b></p>
+					<p class="membr_type mt-2">CEO - FOUNDER Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt, cumque rerum hic modi at corporis in sit possimus labore fugiat quos esse facilis officia veritatis reiciendis soluta commodi perferendis.</p>
+					<div class="mt-5" style="display:flex;">
+						<a href="#" class="contact_social_media facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="contact_social_media twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="contact_social_media instagram">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="contact_social_media linkedin">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 pl-3 pr-3 mb-5">
+				<div class="group_us">
+					<div class="membrs membrs3">
+						
+					</div>
+					<p class="membr_name mt-3"><b>Tom Sunderland</b></p>
+					<p class="membr_type mt-2">CEO - FOUNDER Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt, cumque rerum hic modi at corporis in sit possimus labore fugiat quos esse facilis officia veritatis reiciendis soluta commodi perferendis.</p>
+					<div class="mt-5" style="display:flex;">
+						<a href="#" class="contact_social_media facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="contact_social_media twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="contact_social_media instagram">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="contact_social_media linkedin">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 pl-3 pr-3 mb-5">
+				<div class="group_us">
+					<div class="membrs membrs4">
+						
+					</div>
+					<p class="membr_name mt-3"><b>John Tarly</b></p>
+					<p class="membr_type mt-2">CEO - FOUNDER Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt, cumque rerum hic modi at corporis in sit possimus labore fugiat quos esse facilis officia veritatis reiciendis soluta commodi perferendis.</p>
+					<div class="mt-5" style="display:flex;">
+						<a href="#" class="contact_social_media facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#" class="contact_social_media twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" class="contact_social_media instagram">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="contact_social_media linkedin">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="footer2" id="footer2">
+	<section>
+		<div class="container_footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 mb-5 footer_logo">
+						<img src="imgs/logo.png" >
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+						<ul class="footer_menu">
+							<li>
+								<a href="#" class="text-white">
+									Bosh sahifa
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Protez va ortepediya buyumlari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Andijon viloyati tibbiy-ijtimoiy xizmatlarni rivojlantirish boshqarmasi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Protez buyumlari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sihatgohlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Yangiliklar
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+						<ul class="footer_menu">
+							<li>
+								<a href="#" class="text-white">
+									Sihatgohlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Xonobod sihatgohi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Tovoqsoy sihatgohi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Nurobod sihatgohi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Chortoqsoy sihatgohi
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+						<ul class="footer_menu">
+							<li>
+								<a href="#"class="text-white" >
+									Protez Buyumlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Nogironlar aravachalari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Yelka oldi protezlari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Protez oyoqlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Qo'ltiq tayoqlar
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+						<ul class="footer_menu">
+							<li>
+								<a href="#" class="text-white">
+									Ma'lumot
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Tashkilot haqida
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Aloqa
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									yangiilikla
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/v4-shims.js"></script>	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

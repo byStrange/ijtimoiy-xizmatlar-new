@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <!--bootstrap icons-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--fontawesome icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <!--css files-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Details</title>
+</head>
+<body>
+    <header class="header2" id="header2" style="background: #F6D582">
+        <div>			
+                </div>
+                <nav id="nav1">
+                    <div class="navin_block1">
+                        <div class="logo">
+                            <img src="imgs/logo.png">
+                        </div>
+                        <div class="navs">
+                            <ul>
+                                <a href="main.html">
+                                    <li>
+                                        BOSH SAHIFA
+                                    </li>
+                                </a>
+                                <a href="places.html">
+                                    <li>
+                                        SIHATGOHLAR
+                                    </li>
+                                </a>
+                                <a href="about.html">
+                                    <li>
+                                        BIZ HAQIMIZDA
+                                    </li>
+                                </a>
+                                <a href="news.html">
+                                    <li>
+                                        YANGILIKLAR
+                                    </li>
+                                </a>
+                                <a href="contact.html">
+                                    <li>
+                                        ALOQA
+                                    </li>
+                                </a>
+                                <a href="#" onclick="showModal()">
+                                    <li>
+                                        <i class="bi bi-search">
+                                            
+                                        </i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="user">
+                            <a href="#" class="float-right">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </div>
+                    </div>	
+                    <div class="search_nav1">
+                        <div class="search_inp1">
+                                <input type="search" class="form-control" list="searching" name="searching" id="search_inp1">
+                                <datalist id="searching">
+                                    <option value="result1">
+                                    <option value="result2">
+                                    <option value="result3">
+                                    <option value="result4">
+                                    <option value="result5">
+                                </datalist>
+                        </div>
+                        <div class="search_btn1">
+                                <input class="btn-primary" type="submit" value="search"  id="search_btn1">
+                                <span class="float-right " style="position: relative; top:2.5px; font-size:25px; cursor: pointer;" onclick="closeModal()">
+                                    <i class="bi bi-x-lg"></i>
+                                </span>
+                        </div>	
+                    </div>
+                   </nav>
+                   <nav class="navbar navbar-inverse" id="nav2" >
+                    <div class="navbar-header " style="width:100%;">
+                      <a class="navbar-brand float-left" href="#">
+                          <img src="imgs/logo.png" width="30" style="position:relative; top:-4px;">
+                      </a>
+                      <button type="button" class="navbar-toggle float-right" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                      </button>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="myNavbar" style="border: none;">
+                      <ul class="nav navbar-nav">
+                        <li class="hover_li"><a href="main.html">BOSH SAHIFA</a></li>
+                        <li class="hover_li"><a href="places.html">SIHATGOHLAR</a></li>
+                        <li class="hover_li"><a href="about.html">BIZ HAQIMIZDA</a></li>
+                        <li class="hover_li"><a href="news.html">YANGILIKLAR</a></li>
+                        <li class="hover_li"><a href="contact.html">ALOQA</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right" style="margin-top:-10px; color:white !important;">
+                        <li><a href="#"><span class="glyphicon glyphicon-user mr-3"></span>RO'YHATDAN O'TISH</a></li>
+                        <form action="#">
+                            <li>
+                                <div style="display: flex; align-items:center ; padding:0px 15px;">
+                                    <input type="search"list="searching_mobile" name="searching_mobile"class="form-control" id="search_inp2">
+                                    <datalist id="searching_mobile">
+                                        <option value="result1">
+                                        <option value="result2">
+                                        <option value="result3">
+                                        <option value="result4">
+                                        <option value="result5">
+                                        </datalist>
+                                    <input type="submit" class="btn-primary" id="search_btn2" value="search">
+                                </div>
+                            </li>
+                        </form>
+                      </ul>
+                    </div>
+                </nav>	
+        </div>
+    </header>
+    <!-- modal's link -->
+
+	<link rel="stylesheet" href="css/modal.css">
+
+    <!-- /modal's link -->
+    
+    
+    <!-- modal -->
+    <div class="modal-cont">
+        <div class="modal-bx">
+            <form class="form">
+                <h4><span class="item-type"></span>ga navbatga yozilish uchun ariza berish</h4>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            
+                        <label for="name">Isminigiz</label>
+                        <input type="text" class="form-control" id="name" placeholder="Isminigiz" required=""> 
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="sname">Familyangiz</label>
+                        <input type="text" class="form-control" id="sname" placeholder="Familyangiz" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pname">Otangizni ismi</label>
+                    <input type="text" class="form-control" id="pname" placeholder="Otangizni ismi" required="">
+                </div>
+                <div class="form-group">
+                    <label for="series">Pasport yoki Tugliganlik haqida malumotnoma raqami</label>
+                    <input type="text" class="form-control" id="series" placeholder="Passport seriyasi" required="">
+                </div>
+                <div class="form-group">
+                    <label for="medname">Tibbiy Med Ekspertiza Komissiyasi malumotnoma raqami</label>
+                    <input  type="text" class="form-control" id="medname" placeholder="TMEK malumotnoma raqami"  required="">
+                </div>
+                <div class="form-group">
+                    <label for="number">Telefon raqamingiz</label>
+                    <input type="text" value="+998" class="form-control" pattern="[+][9][9][8][3,9][9,0,1,3,4,5,7,8][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" id="number" required="">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Buyurtma berish" class="form-control btn btn-primary" style="width: 50%">
+                </div>
+                <span class="close-modal" tabindex="1" onclick="closer()">&times</span>
+            </form>
+        </div>
+    </div>
+    <!-- /modal -->
+    
+    
+    <!-- /modal's scripts -->
+    
+    <script src="js/anime.js"></script>
+    <script src="js/root(1).js"></script>
+    <div class="whitespace" style="height: 200px;width: 100%"></div>
+    <div class="container">
+        <div class="row main">
+            <div class="col-md-6" id="imagecont">
+                <div class="responsive-img">
+                    <img src="imgs/made_leg.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="object">
+                    <h1 class="this-type">Protez oyoq</h1>
+                    <h3 class="this-validity-period">Foydalanish muddati: 2 yil</h3>
+                    <h3 class="this-validity-guar">Kafolat muddati: 6 oy</h3>
+                    <p class="this-description">Plastikdan yarimkorset, metall shinalar, metall konstrktsiyalar deliydan staldan tayyorlanadi. Maxsulot ogʼirligi va maxsulot uzunligi sogʼlom qolgan kaftga mos boʼlishi shart, Аpparatlar oʼz funktsional vazifalarini kafolatlangan ekspluatatsiya muddati davomida bajarish kerak,toʼgʼri saqlanish va transportirovka qoilalariga rioya etgan xolda oʼz funktsional imkoniyatlarini saqlab qolishi lozim.</p>
+                </div>
+                <div id="opener">
+                    <button class="btn btn-outline-primary" onclick="opener()">Ariza qoldirish</button>
+                </div>
+                <div class="share-content">
+                    <span class="font" >
+                        <i class="fa-solid fa-share-from-square" id="fontOpener"></i> 
+                        <div class="share">
+                            <a href="">
+                                <div class="col-1">
+                                    <a class="fa-brands fa-telegram"></a>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="col-1">
+                                    <a class="fa-brands fa-instagram"></a>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="col-1">
+                                    <a class="fa-brands fa-facebook"></a>
+                                </div>
+                            </a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('#fontOpener').onclick  = function () {
+            document.querySelector('.share').classList.toggle('active')
+        }
+        document.querySelector('#fontOpener').onclick = function() {
+            this.className = 'fa fa-times'
+            if(this.className == 'fa fa-times') {
+                this.className = 'fa-solid fa-share-from-square'
+            }
+            else {
+                this.className = 'fa fa-times'
+            }
+        }
+    </script>
+</body>
+</html>

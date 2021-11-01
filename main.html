@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="this is for practice" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Abdukarim">
+	<title>IjtimoiyUz</title>
+	<link rel="icon" href="imgs/logo.png" type="image/gif" sizes="16x16">
+	<!--bootstrap icons-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--fontawesome icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <!--css files-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<header id="header" class="header">
+	<div>
+			<!-- <div class="bg_video" id="bg_video">
+	     		<video playsinline autoplay muted loop  id="bgvid">
+	  	   			<source src="video/background_video.mp4" type="video/mp4">
+		 		</video>
+			</div> -->
+			
+			</div>
+			<nav id="nav1">
+				<div class="navin_block1">
+					<div class="logo">
+						<img src="imgs/logo.png">
+					</div>
+					<div class="navs">
+						<ul>
+							<a href="main.html">
+								<li>
+									BOSH SAHIFA
+								</li>
+							</a>
+							<a href="places.html" target="_blank">
+								<li>
+									SIHATGOHLAR
+								</li>
+							</a>
+							<a href="about.html" target="_blank">
+								<li>
+									BIZ HAQIMIZDA
+								</li>
+							</a>
+							<a href="news.html" target="_blank">
+								<li>
+									YANGILIKLAR
+								</li>
+							</a>
+							<a href="contact.html" target="_blank">
+								<li>
+									ALOQA
+								</li>
+							</a>
+							<a href="#" onclick="showModal()">
+								<li>
+									<i class="bi bi-search">
+										
+									</i>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="user">
+						<a href="#" class="float-right">
+							<i class="bi bi-person"></i>
+						</a>
+					</div>
+				</div>	
+				<div class="search_nav1">
+					<div class="search_inp1">
+							<input type="search" class="form-control" list="searching" name="searching" id="search_inp1">
+							<datalist id="searching">
+						    	<option value="result1">
+						    	<option value="result2">
+						    	<option value="result3">
+						    	<option value="result4">
+						    	<option value="result5">
+							</datalist>
+					</div>
+					<div class="search_btn1">
+							<input class="btn-primary" type="submit" value="search"  id="search_btn1">
+							<span class="float-right " style="position: relative; top:2.5px; font-size:25px; cursor: pointer;" onclick="closeModal()">
+								<i class="bi bi-x-lg"></i>
+							</span>
+					</div>	
+				</div>
+	   		</nav>
+	   		<nav class="navbar navbar-inverse" id="nav2" >
+			    <div class="navbar-header " style="width:100%;">
+			      <a class="navbar-brand float-left" href="#">
+			      	<img src="imgs/logo.png" width="30" style="position:relative; top:-4px;">
+			      </a>
+			      <button type="button" class="navbar-toggle float-right" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="myNavbar" style="border: none;">
+			      <ul class="nav navbar-nav">
+			        <li class="hover_li"><a href="main.html">BOSH SAHIFA</a></li>
+			        <li class="hover_li"><a href="places.html" target="_blank">SIHATGOHLAR</a></li>
+			        <li class="hover_li"><a href="about.html" target="_blank">BIZ HAQIMIZDA</a></li>
+			        <li class="hover_li"><a href="news.html" target="_blank">YANGILIKLAR</a></li>
+			        <li class="hover_li"><a href="contact.html" target="_blank">ALOQA</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right" style="margin-top:-10px; color:white !important;">
+			        <li><a href="#"><span class="glyphicon glyphicon-user mr-3"></span>RO'YHATDAN O'TISH</a></li>
+			        <form action="#">
+			        	<li>
+			        		<div style="display: flex; align-items:center ; padding:0px 15px;">
+			        			<input type="search"list="searching_mobile" name="searching_mobile"class="form-control" id="search_inp2">
+			        			<datalist id="searching_mobile">
+						    		<option value="result1">
+						    		<option value="result2">
+						    		<option value="result3">
+						    		<option value="result4">
+						    		<option value="result5">
+									</datalist>
+			        			<input type="submit" class="btn-primary" id="search_btn2" value="search">
+			        		</div>
+			        	</li>
+			        </form>
+			      </ul>
+			    </div>
+			</nav>
+	   		<section class="pr-2 pl-2 header_section w-100" style="transform: translateX(-100%);">
+				<div class="header_title">
+					<h1>
+						Andijon viloyati tibbiy-ijtimoiy<br>
+						xizmatlarni rivojlantirish <br class="br">
+						boshqarmasi
+					</h1>
+				</div>
+				<div class="container-fluid">
+					<div class="header_two_btns row">
+						<div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 mb-4">
+							<button>Buyurtma Berish</button>
+						</div>
+						<div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+							<button style="background:transparent;border:1px solid white;">Buyurtmani tekshirish</button>
+						</div>
+					</div>
+				</div>
+				<div class="header_bottom">
+					<p>
+						Muhtoj pensioner va nogironlarni sihatgox yo'llanmalari va<br>
+						reablitatsiya texnik vositalari bilan ta'minlash yangi onlayn tizimi
+					</p>
+				</div>
+			</section>
+	</div>
+</header>
+<main id="main1" class="main1">
+	<section id="section">
+		<div class="container_my container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
+					<div class="three_icons_main1">
+						<div class="svg_blocks1" >
+							<img src="imgs/settings.svg" style="width:30%; display: block; margin: auto;position: relative; top:18%;">
+							<img src="imgs/hand_and_heart.svg" style="width:30%; display: block; margin: auto;position: relative; top:23%;">
+						</div>
+						<p class="text-center mt-4 mb-2 p_texts">
+							<a href="#">
+								Sihatgohlar uchun  yo'llanmalar
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
+					<div class="three_icons_main2">
+						<div class="svg_blocks2"></div>
+						<p class="text-center mt-4 mb-2 p_texts">
+							<a href="#">
+								Nogironlar uchun protezlar bo'limi
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
+					<div class="three_icons_main3">
+						<div class="svg_blocks3"></div>
+						<p class="text-center mt-4 mb-2 p_texts">
+							<a href="#">
+								Qariyalar uchun sayohatlar bo'limi
+							</a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<div class="text_main_rotate">
+		<div>
+			<h3 class="font-weight-bolder">PROTEZ VA ORTEPEDIYA BUYUMLARI</h3>
+		</div>
+		<div>
+			<p>Muhtoj shaxslarni protez ortopediya moslamalari va reablitatsiya <br>qilishning texnik vositalari bilan taminlash</p>
+		</div>
+	</div>
+
+	<section class="main_items_section">
+		<div class="container_my">
+			<div class="container-fluid">
+				<div class="row ">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom:50px;">
+							<div class="items float1">
+								<img src="imgs/made_leg.png" class="made_leg">
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<div class="items_describtions">
+								<h3 class="font-weight-bolder">Protez Oyoqlar</h3>
+								<br>
+								<span>
+									To'liq oyoq uchun apparat
+									plastik texnogoliyasi asosida
+								</span>
+								<br>
+								<br>
+								<span>
+									Foydalanish muddati: 2 yil
+									Kafolat Muddati: 6 oy
+								</span>
+								<br>
+								<br>
+								<small>
+									<< Kattalar uchun >>
+								</small>
+								<a href="details.html" target="_blank">
+									<button class="btn_more">Batafsil</button>
+								</a>
+							</div>
+						</div>
+				</div>
+				<div class="row row_reverse  rows_lines">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<div class="items_describtions float1">
+								<h3 class="font-weight-bolder">Qo'ltiq Tayoqlar</h3>
+								<br>
+								<span>
+									To'liq Yog'ochdan va metal (nerjavika)
+									turbadan tayyorlangan
+								</span>
+								<br>
+								<br>
+								<span>
+									Foydalanish muddati: 2 yil
+									Kafolat Muddati: 6 oy
+								</span>
+								<br>
+								<br>
+								<small>
+									<< Kattalar uchun >>
+								</small>
+								<a href="details.html" target="_blank">
+									<button class="btn_more" >Batafsil</button>
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom:50px;">
+							<div class="items float2">
+								<img src="imgs/crutch.png" class="crutch">
+							</div>
+						</div>
+				</div>
+				<div class="row   rows_lines">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom:50px;">
+							<div class="items float1">
+								<img src="imgs/invalid_cart.png" class="carts_invalids">
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<div class="items_describtions ">
+								<h3 class="font-weight-bolder">Nogironlar Aravachalari</h3>
+								<br>
+								<p>
+									Zamonaviy qo'lda yengil nogironlar aravachalasi nogironlar aravachalari foydalanuvchilarning o'ziga hos ehtiyojlarini qondirish uchun turli hil formatlarga ega
+								</p>
+								<br>
+								<span>
+									Foydalanish muddati: 2 yil
+									Kafolat Muddati: 6 oy
+								</span>
+								<br>
+								<br>
+								<small>
+									<< Kattalar uchun >>
+								</small>
+								<a href="details.html" target="_blank">
+									<button class="btn_more" >Batafsil</button>
+								</a>
+							</div>
+						</div>
+				</div>
+				<div class="row row_reverse  rows_lines">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<div class="items_describtions float1">
+								<h3 class="font-weight-bolder">Yelka oldi plastik texnalogiyasi asosida</h3>
+								<br>
+								<p>
+									Gilza polietilendan tayyorlanadi kaft xlorvinildan tayyorlanadi
+									Maxsulot og'irligi va maxsulot uzunligi sog'lom qo'lga kaftga mos bo'lishi shart 
+								</p>
+								<br>
+								<span>
+									Foydalanish muddati: 2 yil
+									Kafolat Muddati: 6 oy
+								</span>
+								<br>
+								<br>
+								<small>
+									<< Kattalar uchun >>
+								</small>
+								<a href="details.html" target="_blank">
+									<button class="btn_more" >Batafsil</button>
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom:50px;">
+							<div class="items float2">
+								<img src="imgs/made_hand.png" class="made_hand">
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main_about_section mt-5">
+		<div class="text-center ">
+			<p>
+				<a href="items.html" class="pl-2 pr-2 h3 font-weight-bolder" style="border-bottom:5px solid #F6D582;">
+					PROTEZLAR BO'LIMI
+				</a>
+			</p>
+		</div>
+		<div class="container_my  container" id="content_place">
+			<div class="border_big_block1">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 bg_img pl-5 pr-2 mb-5">
+							<img src="imgs/border_big1.png" class="border_big_img">
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-5 pr-2 ">
+							<h3 class="font-weight-bolder">
+								ANDIJON VILOYATI TIBBIY-IJTIMOIY XIZMATLARNI RIVOJLANTRISH BOSHQARMASI
+							</h3>
+							<p style="margin-top:20px; font-size:16px; font-family:Verdana; letter-spacing:0.5px; line-height:25px;">
+								Aholiga tibbiy ijtimoiy xizmatlarni tashkil qiladi. Jumladan Pensioner va nogironlarni sog'lomlashtirish, ularni reabilitasiya texnik vositalari bilan ta'minlash (nogironlar aravachasi,hassa,eshtish moslamasi, qo'ltiq tayoq va x/k) bundan tashqari protez ortopediya mahsulotlari bilan ta'minlaydi. Ro'yxatga olingan o'zgalar parvarishiga muhtoj yakka yolg'izlarga uyda tibbiy-ijtimoiy xizmatlarni tashkillashtiradi. Tizimda 4 ta sahovat va muruvvat uylari va viloyatda nogironligi bo'lgan shaxslarni reabilitasiya qilish va protezlash markazi ham boshqarma tizimiga kiradi.
+							</p>
+							<a href="#">
+								<button class="btn_more2">
+									BATAFSIL >>
+							    </button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center" style="margin-top:50px;">
+			<p>
+				<a href="#" class="pl-2 pr-2 h2 font-weight-bolder">
+					SIHATGOXLAR
+				</a>
+			</p>
+			<p style="margin-top:10px; font-size:17px; font-family:Verdana; letter-spacing:0.5px; line-height:25px;">
+				Yurtimizning iqlimi va tabiati bilan ajralib turuvchi mintaqalarida<br>
+				joylashgan eng yaxshi sihatgoxlar
+			</p>
+		</div>
+	</section>
+	<section class="main_plases_section">
+		<div class="container_my2 container">
+			<div class="container-fluid">
+				<div class="row mb-5  anim_left">	
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cols_border_r">
+						<img src="imgs/places2.png">
+						<a href="#" class="d-block">
+							<button>BATAFSIL >></button>
+						</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cols_descr">
+						<h3>
+							CHORTOQSOY SIXATGOHI
+						</h3>
+					</div>
+				</div>
+				<div class="row mb-5 row_reverse2 anim_right">	
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cols_descr">
+						<h3>
+							TAVOQSOY SIXATGOHI
+						</h3>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cols_border_r">
+						<img src="imgs/places1.png">
+						<a href="#" class="d-block">
+							<button>BATAFSIL >></button>
+						</a>
+					</div>
+				</div>
+				<div class="row mb-5 anim_left">	
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cols_border_r">
+						<img src="imgs/places3.png">
+						<a href="#" class="d-block">
+							<button>BATAFSIL >></button>
+						</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cols_descr">
+						<h3>
+							NUROBOD SIXATGOHI
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container_my3 container">
+		<div class="border_big_block2">
+			<h1 class="news">YANGILIKLAR</h1>
+			<div class="container-fluid" style="margin-top:50px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5">
+						<div class="news_blocks">
+							<div style="width:100%; height: 45%;background-image: url(imgs/der1.jpeg); background-size: cover;">
+								
+							</div>
+							<p class="news_title mt-4">
+								<b>Farmatsevtik Sanoatidagi Korruptsiyaga Qarshi Kurash</b> 
+							</p>
+							<p class="news_main">
+								Korrupsiya - shaxsning oʻz mansab yoki xizmat mavqyeidan shaxsiy manfaatlarini yoxud oʻzga shaxslarning manfaatlarini koʻzlab moddiy yoki nomoddiy naf olish …
+							</p>
+							<span class="text-white">
+								29-SENTYABR 2021-YIL
+							</span>
+							<a href="#">
+								<button class="btn_more2">
+									BATAFSIL >>
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5">
+						<div class="news_blocks">
+							<div style="width:100%; height: 45%;background-image: url(imgs/der2.jpg); background-size: cover;">
+								
+							</div>
+							<p class="news_title mt-4">
+								<b>Farmatsevtik Sanoatidagi Korruptsiyaga Qarshi Kurash</b> 
+							</p>
+							<p class="news_main">
+								Korrupsiya - shaxsning oʻz mansab yoki xizmat mavqyeidan shaxsiy manfaatlarini yoxud oʻzga shaxslarning manfaatlarini koʻzlab moddiy yoki nomoddiy naf olish …
+							</p>
+							<span class="text-white">
+								29-SENTYABR 2021-YIL
+							</span>
+							<a href="#">
+								<button class="btn_more2">
+									BATAFSIL >>
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<div class="news_blocks">
+							<div style="width:100%; height: 45%;background-image: url(imgs/der2_1.jpeg); background-size: cover;">
+								
+							</div>
+							<p class="news_title mt-4">
+								<b>Farmatsevtik Sanoatidagi Korruptsiyaga Qarshi Kurash</b> 
+							</p>
+							<p class="news_main">
+								Korrupsiya - shaxsning oʻz mansab yoki xizmat mavqyeidan shaxsiy manfaatlarini yoxud oʻzga shaxslarning manfaatlarini koʻzlab moddiy yoki nomoddiy naf olish …
+							</p>
+							<span class="text-white">
+								29-SENTYABR 2021-YIL
+							</span>
+							<a href="#">
+								<button class="btn_more2">
+									BATAFSIL >>
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer2" id="footer">
+	<section>
+		<div class="container_footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 mb-5 footer_logo">
+						<img src="imgs/logo.png" >
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+						<ul class="footer_menu">
+							<li>
+								<a href="#" class="text-white">
+									Bosh sahifa
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Protez va ortepediya buyumlari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Andijon viloyati tibbiy-ijtimoiy xizmatlarni rivojlantirish boshqarmasi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Protez buyumlari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sihatgohlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Yangiliklar
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+						<ul class="footer_menu">
+							<li>
+								<a href="#" class="text-white">
+									Sihatgohlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Xonobod sihatgohi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Tovoqsoy sihatgohi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Nurobod sihatgohi
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Chortoqsoy sihatgohi
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+						<ul class="footer_menu">
+							<li>
+								<a href="#"class="text-white" >
+									Protez Buyumlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Nogironlar aravachalari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Yelka oldi protezlari
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Protez oyoqlar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Qo'ltiq tayoqlar
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+						<ul class="footer_menu">
+							<li>
+								<a href="#" class="text-white">
+									Ma'lumot
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Tashkilot haqida
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Aloqa
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									yangiilikla
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/v4-shims.js"></script>	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
