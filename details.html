@@ -11,12 +11,14 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 	<!--bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<!--fontawesome icons-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <!--css files-->
+
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>:focus{outline: none !important;}.btn{padding: .375rem .75rem !important;}{</style>
     <title>Details</title>
 </head>
 <body>
@@ -25,8 +27,8 @@
                 </div>
                 <nav id="nav1">
                     <div class="navin_block1">
-                        <div class="logo">
-                            <img src="imgs/logo.png">
+                        <div class="logo" href="main.html"> 
+                            <a href="main.html"><a href="main.html"><img src="imgs/logo.png"></a></a>
                         </div>
                         <div class="navs">
                             <ul>
@@ -144,15 +146,15 @@
             <form class="form">
                 <h4><span class="item-type"></span>ga navbatga yozilish uchun ariza berish</h4>
                 <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-6">
+                    <div class="row" style="padding:10px ;margin: 0 -15px;">
+                        <div class="col-sm-6" style="padding: 0 15px;">
                             
-                        <label for="name">Isminigiz</label>
-                        <input type="text" class="form-control" id="name" placeholder="Isminigiz" required=""> 
+                        <label for="name" style="margin: 0 0 8px;">Isminigiz</label>
+                        <input type="text" class="form-control" id="name" placeholder="Isminigiz" required="" style="margin: 0;padding: 6px 12px;"> 
                         </div>
-                        <div class="col-sm-6">
-                            <label for="sname">Familyangiz</label>
-                        <input type="text" class="form-control" id="sname" placeholder="Familyangiz" required="">
+                        <div class="col-sm-6" style="padding: 0 15px;">
+                            <label for="sname" style="margin: 0 0 8px;">Familyangiz</label>
+                            <input type="text" class="form-control" id="sname" placeholder="Familyangiz" required="" style="margin: 0;padding: 6px 12px;">
                         </div>
                     </div>
                 </div>
@@ -183,14 +185,14 @@
     
     
     <!-- /modal's scripts -->
-    
+    <script src="js/cleave.js"></script>
     <script src="js/anime.js"></script>
     <script src="js/root(1).js"></script>
-    <div class="whitespace" style="height: 200px;width: 100%"></div>
+    <div class="whitespace" style="height: 50px;width: 100%"></div>
     <div class="container">
-        <div class="row main">
-            <div class="col-md-6" id="imagecont">
-                <div class="responsive-img">
+        <div class="row main" style="margin: 0 -15px   ;">
+            <div class="col-md-6" >
+                <div class="responsive-img" id="imagecont">
                     <img src="imgs/made_leg.png" alt="">
                 </div>
             </div>
@@ -206,7 +208,7 @@
                 </div>
                 <div class="share-content">
                     <span class="font" >
-                        <i class="fa-solid fa-share-from-square" id="fontOpener"></i> 
+                        <i class="fa-solid fa-share-from-square" id="fontOpener" onclick="open(document.querySelector(''))"></i> 
                         <div class="share">
                             <a href="">
                                 <div class="col-1">
@@ -230,18 +232,165 @@
         </div>
     </div>
     <script>
-        document.querySelector('#fontOpener').onclick  = function () {
-            document.querySelector('.share').classList.toggle('active')
-        }
-        document.querySelector('#fontOpener').onclick = function() {
-            this.className = 'fa fa-times'
-            if(this.className == 'fa fa-times') {
-                this.className = 'fa-solid fa-share-from-square'
-            }
-            else {
-                this.className = 'fa fa-times'
-            }
-        }
+        document.querySelector('#fontOpener').onclick = open
+    a = true
+
+function open() {
+    if (a) {
+        a = false
+
+        anime({
+            targets: document.querySelector('.share'),
+            opacity: 1,
+            translateY: -52,
+            translateX: 100
+        })
+    } else {
+        anime({
+            targets: document.querySelector('.share'),
+            opacity: 0,
+            translateY: 0,
+            translateX: 0
+        })
+        a = true
+    }
+}
     </script>
+    <footer class="footer2" id="footer2">
+    <section>
+        <div class="container_footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 mb-5 footer_logo">
+                        <img src="imgs/logo.png" >
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+                        <ul class="footer_menu">
+                            <li>
+                                <a href="#" class="text-white">
+                                    Bosh sahifa
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Protez va ortepediya buyumlari
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Andijon viloyati tibbiy-ijtimoiy xizmatlarni rivojlantirish boshqarmasi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Protez buyumlari
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Sihatgohlar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Yangiliklar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+                        <ul class="footer_menu">
+                            <li>
+                                <a href="#" class="text-white">
+                                    Sihatgohlar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Xonobod sihatgohi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tovoqsoy sihatgohi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nurobod sihatgohi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Chortoqsoy sihatgohi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+                        <ul class="footer_menu">
+                            <li>
+                                <a href="#"class="text-white" >
+                                    Protez Buyumlar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nogironlar aravachalari
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Yelka oldi protezlari
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Protez oyoqlar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Qo'ltiq tayoqlar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                        <ul class="footer_menu">
+                            <li>
+                                <a href="#" class="text-white">
+                                    Ma'lumot
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tashkilot haqida
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Aloqa
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    yangiilikla
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/v4-shims.js"></script>   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>

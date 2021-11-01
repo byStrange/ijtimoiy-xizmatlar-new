@@ -32,7 +32,7 @@
 			<nav id="nav1">
 				<div class="navin_block1">
 					<div class="logo">
-						<img src="imgs/logo.png">
+						<a href="main.html"><img src="imgs/logo.png"></a>
 					</div>
 					<div class="navs">
 						<ul>
@@ -198,7 +198,7 @@
 					<p style="font-family: Tahoma; letter-spacing:0.5px;">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestias vero blanditiis quibusdam quaerat hic quae optio corrupti veritatis fugit, dicta! Ipsum sit at ab consectetur quis eligendi sunt vero, libero.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius voluptatum error repellat in officia accusantium impedit illum commodi, eaque possimus obcaecati sequi. Eum veritatis quis reiciendis neque enim beatae.</p>
 				</div>
 				<div class="mt-5">
-					<button class="more_places">ARIZ TOPSHIRISH</button>
+					<button class="more_places" onclick="opener()">ARIZA TOPSHIRISH</button>
 				</div>
 			</div>
 		</div>
@@ -223,7 +223,7 @@
 					<p style="font-family: Tahoma; letter-spacing:0.5px;">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestias vero blanditiis quibusdam quaerat hic quae optio corrupti veritatis fugit, dicta! Ipsum sit at ab consectetur quis eligendi sunt vero, libero.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius voluptatum error repellat in officia accusantium impedit illum commodi, eaque possimus obcaecati sequi. Eum veritatis quis reiciendis neque enim beatae.</p>
 				</div>
 				<div class="mt-5">
-					<button class="more_places">ARIZ TOPSHIRISH</button>
+					<button class="more_places"  onclick="opener()">ARIZA TOPSHIRISH</button>
 				</div>
 			</div>
 		</div>
@@ -248,7 +248,7 @@
 					<p style="font-family: Tahoma; letter-spacing:0.5px;">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestias vero blanditiis quibusdam quaerat hic quae optio corrupti veritatis fugit, dicta! Ipsum sit at ab consectetur quis eligendi sunt vero, libero.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius voluptatum error repellat in officia accusantium impedit illum commodi, eaque possimus obcaecati sequi. Eum veritatis quis reiciendis neque enim beatae.</p>
 				</div>
 				<div class="mt-5">
-					<button class="more_places">ARIZ TOPSHIRISH</button>
+					<button class="more_places" onclick="opener()">ARIZA TOPSHIRISH</button>
 				</div>
 			</div>
 		</div>
@@ -274,7 +274,7 @@
 					<p style="font-family: Tahoma; letter-spacing:0.5px;">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestias vero blanditiis quibusdam quaerat hic quae optio corrupti veritatis fugit, dicta! Ipsum sit at ab consectetur quis eligendi sunt vero, libero.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius voluptatum error repellat in officia accusantium impedit illum commodi, eaque possimus obcaecati sequi. Eum veritatis quis reiciendis neque enim beatae.</p>
 				</div>
 				<div class="mt-5">
-					<button class="more_places">ARIZ TOPSHIRISH</button>
+					<button class="more_places" onclick="opener()">ARIZA TOPSHIRISH</button>
 				</div>
 			</div>
 		</div>
@@ -299,7 +299,7 @@
 					<p style="font-family: Tahoma; letter-spacing:0.5px;">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestias vero blanditiis quibusdam quaerat hic quae optio corrupti veritatis fugit, dicta! Ipsum sit at ab consectetur quis eligendi sunt vero, libero.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius voluptatum error repellat in officia accusantium impedit illum commodi, eaque possimus obcaecati sequi. Eum veritatis quis reiciendis neque enim beatae.</p>
 				</div>
 				<div class="mt-5">
-					<button class="more_places">ARIZ TOPSHIRISH</button>
+					<button class="more_places" onclick="opener()">ARIZA TOPSHIRISH</button>
 				</div>
 			</div>
 		</div>
@@ -324,13 +324,77 @@
 					<p style="font-family: Tahoma; letter-spacing:0.5px;">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Molestias vero blanditiis quibusdam quaerat hic quae optio corrupti veritatis fugit, dicta! Ipsum sit at ab consectetur quis eligendi sunt vero, libero.	Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius voluptatum error repellat in officia accusantium impedit illum commodi, eaque possimus obcaecati sequi. Eum veritatis quis reiciendis neque enim beatae.</p>
 				</div>
 				<div class="mt-5">
-					<button class="more_places">ARIZ TOPSHIRISH</button>
+					<button class="more_places" onclick="opener()">ARIZA TOPSHIRISH</button>
 				</div>
 			</div>
 		</div>
-		<!--the end-->
 	</div>
 </main>
+	<link rel="stylesheet" href="css/modal.css">
+		<!--the end-->
+		<div class="modal-cont">
+        <div class="modal-bx">
+            <form class="form">
+                <h4><span class="item-type"></span>Ariza berish uchun barcha maydonlarni ma'lumotlarni to'ldiring</h4>
+                <div class="form-group">
+                    <div class="row" style="padding:10px ;margin: 0 -15px;">
+                        <div class="col-sm-6" style="padding: 0 15px;">
+                            
+                        <label for="name" style="margin: 0 0 8px;">Isminigiz</label>
+                        <input type="text" class="form-control" id="name" placeholder="Isminigiz" required="" style="margin: 0;padding: 6px 12px;"> 
+                        </div>
+                        <div class="col-sm-6" style="padding: 0 15px;">
+                            <label for="sname" style="margin: 0 0 8px;">Familyangiz</label>
+                            <input type="text" class="form-control" id="sname" placeholder="Familyangiz" required="" style="margin: 0;padding: 6px 12px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pname">Otangizni ismi</label>
+                    <input type="text" class="form-control" id="pname" placeholder="Otangizni ismi" required="">
+                </div>
+                <div class="form-group">
+                    <label for="series">Pasport yoki Tugliganlik haqida malumotnoma raqami</label>
+                    <input type="text" class="form-control" id="series" placeholder="Passport seriyasi" required="">
+                </div>
+                <div class="form-group">
+                    <label for="medname">Pensionerlik xaqida guvoxnoma yoki ma'lumotnoma raqami</label>
+                    <input  type="number" class="form-control" id="medname"  required="">
+                </div>
+                <div class="form-group">
+                	<label for="select_city">Yashash manzilingiz</label>
+                	<select name="" class="form-control">
+                		 <option value="">--- -- ---</option>
+                		 <option value="Andijon">Andijon tumani IIB</option>
+                          <option value="Buloqboshi">Buloqboshi tumani IIB</option>
+                          <option value="Izboskan">Izboskan tumani IIB</option>
+                          <option value="Shahrixon">Shahrixon tumani IIB</option>
+                          <option value="Qo&#x27;rg&#x27;ontepa">Qo&#x27;rg&#x27;ontepa tumani IIB</option>
+                          <option value="Paxtobod">Paxtobod tumani IIB</option>
+                          <option value="Baliqchi">Baliqchi tumani IIB</option>
+                          <option value="Ulug&#x27;nor">Ulug&#x27;nor tumani IIB</option>
+                          <option value="Xo&#x27;jobod">Xo&#x27;jobod tumani IIB</option>
+                          <option value="Jalaquduq">Jalaquduq tumani IIB</option>
+                          <option value="Oltinko&#x27;l">Oltinko&#x27;l tumani IIB</option>
+                          <option value="Marhamat">Marhamat tumani IIB</option>
+                          <option value="Bo&#x27;ston">Bo&#x27;ston tumani IIB</option>
+                          <option value="Andijon shahar">Andijon shahar IIB</option>
+                          <option value="Xonobod shahar">Xonobod shahar IIB</option>
+                	</select>
+                </div>
+                <div class="form-group">
+                    <label for="number">Telefon raqamingiz</label>
+                    <input type="text" value="+998" class="form-control" pattern="[+][9][9][8][3,9][9,0,1,3,4,5,7,8][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" id="number" required="">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Buyurtma berish" class="form-control btn btn-primary" style="width: 50%">
+                </div>
+                <span class="close-modal" tabindex="1" onclick="closer()">&times</span>
+            </form>
+        </div>
+    </div>
+    <script src="js/anime.js"> </script>
+    <script src="js/root(1).js"></script>
 <footer class="footer2" id="footer2">
 	<section>
 		<div class="container_footer">
@@ -450,7 +514,7 @@
 							</li>
 							<li>
 								<a href="#">
-									yangiilikla
+									yangiiliklar
 								</a>
 							</li>
 						</ul>

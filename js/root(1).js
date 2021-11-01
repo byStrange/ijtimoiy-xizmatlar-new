@@ -44,6 +44,3 @@ closer()
 // 		closer()
 // 	}
 // }
-new Cleave('#number', {
-	number: true
-})

@@ -111,10 +111,9 @@ select{
 		width: 100%;
 	}
 	.modal-bx{
-		width: 80% !important
+		width: 100% !important
 	}
 	.row > div {
 		margin-bottom: 15px
 	}
-
 } 
