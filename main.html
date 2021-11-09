@@ -18,8 +18,49 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <!--css files-->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 </head>
-<body>
+<body onload="closer()">
+	<!-- Modal content -->
+	<div class="modal-cont">
+        <div class="modal-bx">
+            <form class="form">
+                <h4><span class="item-type"></span>Ariza tekshirish</h4>
+                <div class="form-group">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="pname">Ariza turi</label>
+								<select class="form-control" required>
+									<option disabled>Tanlang</option>
+									<option>Sihatgoh uchun ariza</option>
+									<option>Tibbiy buyum uchun ariza</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							
+							<div class="form-group">
+								<label for="series">Pasport seriyasi</label>
+								<input type="text" class="form-control" id="series" placeholder="Passport seriyasi" required="">
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="form-group">
+                    <label for="number">Telefon raqamingiz</label>
+                    <input type="text" value="+998" class="form-control" pattern="[+][9][9][8][3,9][9,0,1,3,4,5,7,8][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" id="number" required="">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Ariza tekshirish" class="form-control btn btn-primary" style="width: 50%">
+                </div>
+                <span class="close-modal" tabindex="1" onclick="closer()">&times</span>
+            </form>
+        </div>
+    </div>
+	<!--/ Modal content -->
+	<script src="js/anime.js"></script>
+	<script src="js/root(1).js"></script>
 <header id="header" class="header">
 	<div>
 			<!-- <div class="bg_video" id="bg_video">
@@ -146,10 +187,10 @@
 				<div class="container-fluid">
 					<div class="header_two_btns row">
 						<div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 mb-4">
-							<button>Buyurtma Berish</button>
+							<button style="border: 1px solid #fff" onclick="createOpen()">Ariza berish</button>
 						</div>
 						<div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-							<button style="background:transparent;border:1px solid white;">Buyurtmani tekshirish</button>
+							<button style="background:transparent;border:1px solid white;" onclick="opener()">Arizani tekshirish</button>
 						</div>
 					</div>
 				</div>
